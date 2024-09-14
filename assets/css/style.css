@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+*{
+    box-sizing: border-box;
+    color: white;
+    font-family: Oswald,sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+
+.col{
+    flex-flow: column
+}
+
+:root{
+    --green: #3dc6c1;
+    --red: #d0514c;
+    --grey: #2e3241;
+    --text-grey: #60636a;
+    --background: #191d28;
+}
+
+body{
+    background-color: var(--background);
+}
+
+
+/* header start */
+
+header{
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+.header-child1, .header-child2, .header-child3{
+    width: 33%;
+}
+
+.logo{
+    width: 70%;
+   
+}
+
+.header-child2{
+    justify-content: center;
+
+}
+
+.header-child2 button{
+    background-color: var(--grey);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.header-child2 > div{
+    
+    margin: 0 0.8rem;
+}
+
+.timer{
+    width: 100%;
+}
+
+.telegram-icon{
+    width: 10%;
+}
+
+.connect-telegram{
+    background-color: var(--green);
+    border-radius: 10px;
+    padding: 0.3rem;
+    font-size: 1rem;
+
+}
+
+.toggle{
+    width: 3rem;
+    height: 2rem;
+    background-color: var(--grey);
+    border-radius: 20px;
+    position: relative;
+}
+
+.toggle-btn{
+    width: 25px;
+    height: 25px;
+    background-color: var(--green);
+    border-radius: 100px;
+    position: absolute;
+    top: 3px;
+    right: 5px ;
+}
+
+.header-child3{
+    justify-content: end;
+    align-items: center;
+}
+
+.header-child3 > div{
+    margin: 10px;
+}
+
+
+
+/* main section start */
+
+main{
+    flex-flow: column;
+}
+
+.main-sec1 h2{
+    color: var(--text-grey);
+}
+
+.best-price-text{
+    text-align: center;
+}
+
+.main-sec2{
+    justify-content: space-evenly;
+    
+}
+
+.main-sec2 > div{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 12%;
+    
+}
+
+.main-sec2 > div > *{
+    margin: 0;
+    text-align: center;
+}
+
+.main-sec2 > div > h2{
+    color: var(--green);
+    font-size: 2rem;
+}
+
+.main-sec2 h1 {
+    font-size: 4rem;
+}
+
+.main-sec2 p{
+    margin: 1rem;
+    color: var(--text-grey);
+}
+
+.update-interval{
+    font-size: 1.5rem;
+}
+
+
+/* table */
+
+.main-sec3{
+    
+    overflow: scroll;
+}
+
+table{
+    
+    margin: 1.5rem;
+    text-align: center;
+    border-spacing: 0 15px;
+    
+}
+
+th{
+    font-size: 1.5rem;
+    color: var(--text-grey);
+    padding: 1rem;
+}
+
+td{
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.charts{
+    background-color: var(--grey);
+    
+    
+}
+
+tr:first-child td:first-child { border-top-left-radius: 10px; }
+tr:first-child td:last-child { border-top-right-radius: 10px; }
+tr:last-child td:first-child { border-bottom-left-radius: 10px; }
+tr:last-child td:last-child { border-bottom-right-radius: 10px; }
+
+hr{
+    width: 100%;
+    border: 1px solid var(--grey)
+}
+
+/* footer */
+
+footer{
+    justify-content: space-between;
+}
+
+footer > div{
+    font-size: 14px;
+    color: var(--text-grey);
+}
+
+/* bottom fixed section */
+
+.fixed button{
+    background-color: transparent;
+    border: 2px solid #1791a6 ;
+    color: #1791a6 ;
+    padding: 0.5rem;
+    font-family: revert;
+    border-radius: 3px;
+    margin: auto;
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.fixed div{
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    background-color: var(--background);
+    padding: 6px;
+}

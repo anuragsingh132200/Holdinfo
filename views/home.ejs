@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <title>Document</title>
+</head>
+<style>
+
+
+</style>
+<body>
+    <section class="fixed">
+        <div>
+            <button>Add hodlinfo to home screen</button>
+        </div>
+    </section>
+
+    <header class="flex">
+        <div  class="header-child1"><a href="/" class="flex"><img src="/images/logo.png" alt="logo" class="logo"></a></div>
+        <div class="flex header-child2" >
+            <div><button>INR</button></div>
+            <div><button>BTC</button></div>
+            <div><button>BUY BTC</button></div>
+        </div>
+        <div  class="flex header-child3">
+            <div style="width: 4rem;"><img src="/images/timer.jsp" alt="timer" class="timer"></div>
+            <div style="width: 10rem;">
+                <div class="connect-telegram">
+                    <img src="/images/telegram.png" alt="" class="telegram-icon"> Connect Telegram
+                </div>
+            </div>
+            <div  >
+                <div class="toggle">
+                    <div class="toggle-btn"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex">
+        <section class="main-sec1">
+            <h2 class="best-price-text">Best Price to Trade</h2>
+        </section>
+
+        <section class="flex main-sec2" >
+            <div><h2>0.08%</h2><p class="update-interval">5 Mins</p></div>
+            <div><h2>0.08%</h2><p class="update-interval">5 Mins</p></div>
+            <div style="width: 40%"><h1>₹ 24,45,919%</h1><p>Average BTC/INR net price including commission</p></div>
+            <div><h2>0.08%</h2><p class="update-interval">5 Mins</p></div>
+            <div><h2>0.08%</h2><p class="update-interval">5 Mins</p></div>
+        </section>
+
+        <section class="flex main-sec3 col">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Platform</th>
+                        <th>Last Traded Price</th>
+                        <th>Buy / Sell Price</th>
+                        <th>Volume</th>
+                        <th>Base Unit</th>
+                    </tr>
+                </thead>
+                
+                </tbody id="table-body">
+                    
+                    <% dataList.forEach((value, index)=>{%>
+                        <tr class="charts">
+                            <td><%= index + 1 %></td>
+                            <td><%= value.name %></td>
+                            <td><%= value.last %></td>
+                            <td><%= value.buy %></td>
+                            <td><%= value.sell %></td>
+                            <td><%= value.volume %></td>
+                        </tr>
+                    <%}) %>
+
+                <tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <footer class="flex">
+            <div>Copyright © 2019 HodlInfo.com</div>
+            <div>Support</div>
+
+        </footer>
+    </main>
+    
+</body>
+</html>

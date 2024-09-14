@@ -1,0 +1,37 @@
+@media only screen and (max-width: 820px) {
+  .header-child1, .header-child2, .header-child3{
+    width: initial;
+}
+
+  header{
+      flex-flow: column;
+    }
+  .logo{
+    margin:auto
+  }  
+  .header-child3{
+    margin: auto;
+  }
+
+  .main-sec2{
+    justify-content: center;
+  }
+  .main-sec2 > div > h2{
+    font-size: 1rem;
+  }
+
+  .main-sec2 h1 {
+    font-size: 1.5rem;
+  }
+
+  .update-interval{
+    font-size: 1rem;
+  } 
+  table{
+    margin: 0;
+  }
+  th, td{
+    font-size: 1rem;
+  }
+ 
+}
